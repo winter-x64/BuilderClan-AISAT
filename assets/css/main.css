@@ -155,7 +155,6 @@ body {
     text-decoration: none;
     position: relative;
     transition: color 0.3s ease;
-    /* transition: color .2s; */
 }
 
 .nav__links a:hover {
@@ -442,7 +441,6 @@ section:hover {
     position: relative;
     overflow: hidden;
     text-align: center;
-    /* background: var(--indigo-600); */
     color: #fff;
 
     background: linear-gradient(-45deg, #7b2ff7, #f107a3, #ff6a00, #ffdd00);
@@ -513,14 +511,6 @@ section:hover {
     margin-bottom: 1rem;
     margin: 0 auto;
 }
-
-
-/* .cards {
-    margin-top: 2.5rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.25rem;
-} */
 
 .card {
     background: #c660ebe6;
