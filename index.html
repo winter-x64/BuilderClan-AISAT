@@ -4,10 +4,16 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" type="image/svg+xml"
-            href="assets/images/builderLogoAISAT.svg" />
+            href="assets/images/builderclan/builderLogoAISAT.svg" />
 
-        <script
-            src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <!-- Fonts -->
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        </style>
+
+        <script src="assets/js/scripts.js"></script>
+        <!-- <script
+            src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
 
         <title>BuilderClan AISAT</title>
 
@@ -23,9 +29,10 @@
         <header class="nav">
             <div class="container nav__inner">
                 <div class="nav__logo">
-                    <img src="assets/images/LogoShort.svg"
+                    <img src="assets/images/builderclan/LogoShort.svg"
                         alt="BuilderClan Logo" class="logo-icon">
                     <a href="https://builderclan.org/#home"
+                        class="buildertext"
                         target="_blank"
                         rel="noopener noreferrer">BuilderClan</a>
                 </div>
@@ -53,25 +60,91 @@
                     <a href="#join" class="btn btn--primary">Get Started</a>
                     <a href="#about" class="btn btn--inverse">Learn More</a>
                 </div>
-                <div class="hero__logo-wrapper">
-                    <img src="assets/images/builderLogoAISAT.svg"
+                <div class="hero__logo-wrapper" id="builderlogo">
+                    <img src="assets/images/builderclan/builderLogoAISAT.svg"
                         alt="BuilderClan Logo"
                         class="hero__logo">
+                </div>
+
+                <div id="flappyGameContainer">
+                    <canvas
+                        id="flappyCanvas"
+                        width="350"
+                        height="350"
+                        style="background: url('assets/images/flappy/flappyback.png'); background-size: 100%; background-repeat: no-repeat;"">
+                    </canvas>
                 </div>
             </div>
         </section>
 
         <!-- About Section -->
-        <section id="about" class="section section--sb"
+        <section id="about" class="section-about  section--sb"
             data-aos="fade-up">
             <div class="container text-center">
                 <h2 class="section__title">About BuilderClan</h2>
                 <p class="section__text">
                     We are a community driven by curiosity and
                     collaboration. From hackathons to workshops,
-                    BuilderClan@AISAT thrives on sharing knowledge, sparking
+                    BuilderClan@AISAT thrives on sharing knowledge,
+                    sparking
                     innovation, and building things that matter.
                 </p>
+            </div>
+        </section>
+
+        <!-- MISSION -->
+        <section class="mission">
+            <div class="mission-content">
+                <div class="mission-text">
+                    <h3>Our Mission</h3>
+                    <p>
+                        Our mission is to empower students and creators by
+                        providing a platform to collaborate,
+                        share knowledge, and build real-world solutions.
+                        Whether
+                        you’re into coding, design,
+                        or innovation, BuilderClan is your space to make
+                        ideas
+                        come alive.
+                    </p>
+                </div>
+                <div class="mission-image">
+                    <div class="floating-card"><img
+                            src="assets/images/builderclan/about.jpeg"></div>
+                </div>
+            </div>
+        </section>
+
+        <!--VISION -->
+        <section class="vision text-center">
+            <h3>Our Vision</h3>
+            <p>
+                We envision a world where creativity meets action, where
+                communities thrive through collaboration,
+                and where every member of BuilderClan AISAT has the tools to
+                turn their ideas into impact.
+            </p>
+        </section>
+
+        <!-- Team Section -->
+        <section class="team">
+            <h3>Meet The Team</h3>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="icon">👩‍💻</div>
+                    <h4>Coders</h4>
+                    <p>Turning coffee into code and ideas into reality.</p>
+                </div>
+                <div class="team-card">
+                    <div class="icon">🎨</div>
+                    <h4>Designers</h4>
+                    <p>Bringing ideas to life with visuals that inspire.</p>
+                </div>
+                <div class="team-card">
+                    <div class="icon">💡</div>
+                    <h4>Innovators</h4>
+                    <p>Shaping the future with bold ideas and action.</p>
+                </div>
             </div>
         </section>
 
@@ -81,20 +154,24 @@
             <div class="container text-center">
                 <h2 class="section__title">Our Community</h2>
                 <p class="section__text small-gap">
-                    We connect passionate people working on open-source
-                    projects, hosting events, and driving innovation challenges.
+                    We connect passionate people working on
+                    open-source
+                    projects, hosting events, and driving innovation
+                    challenges.
                 </p>
             </div>
         </section>
 
         <!-- FAQ  section -->
-        <section id="faq" class="section section--ds" data-aos="fade-up">
+        <section id="faq" class="section section--ds"
+            data-aos="fade-up">
             <h2 class="section__title text-center">FAQ</h2>
 
             <div class="container faq-container">
 
                 <div class="card card--indigo">
-                    <h3 class="card__title">What is BuilderClan?</h3>
+                    <h3 class="card__title">What is
+                        BuilderClan?</h3>
                     <p class="card__text">
                         A tech community where builders, coders, and
                         designers collaborate on projects and ideas.
@@ -104,7 +181,8 @@
                 <div class="card card--teal">
                     <h3 class="card__title">Who can join?</h3>
                     <p class="card__text">
-                        Anyone with a passion for building — whether you're
+                        Anyone with a passion for building — whether
+                        you're
                         a beginner or an expert.
                     </p>
                 </div>
@@ -112,7 +190,8 @@
                 <div class="card">
                     <h3 class="card__title">How do I join?</h3>
                     <p class="card__text">
-                        Click the Join button below to connect with us on
+                        Click the Join button below to connect with
+                        us on
                         Discord and start collaborating.
                     </p>
                 </div>
@@ -122,8 +201,10 @@
                     <h3 class="card__title">What activities does
                         BuilderClan organize?</h3>
                     <p class="card__text">
-                        We host open-source projects, hackathons, coding
-                        challenges, workshops, webinars, and community
+                        We host open-source projects, hackathons,
+                        coding
+                        challenges, workshops, webinars, and
+                        community
                         meetups,
                         as well as networking opportunities and
                         mentorship programs.
@@ -131,21 +212,25 @@
                 </div>
 
                 <div class="card hidden card--indigo">
-                    <h3 class="card__title">Are there any rules for the
+                    <h3 class="card__title">Are there any rules for
+                        the
                         community?</h3>
                     <p class="card__text">
-                        Yes, we have a set of community rules to ensure
+                        Yes, we have a set of community rules to
+                        ensure
                         a respectful and collaborative environment.
                         You can find them on our official website.
                     </p>
                 </div>
 
                 <div class="card hidden card--teal">
-                    <h3 class="card__title">Can I promote my projects or
+                    <h3 class="card__title">Can I promote my
+                        projects or
                         services in the community?</h3>
                     <p class="card__text">
                         Yes, but please ensure your promotions are
-                        relevant and non-spammy. Use designated channels
+                        relevant and non-spammy. Use designated
+                        channels
                         for project showcases.
                     </p>
                 </div>
@@ -165,7 +250,8 @@
                     <h3 class="card__title">How do I contact the
                         BuilderClan team?</h3>
                     <p class="card__text">
-                        You can reach us at main.builderclan@gmail.com
+                        You can reach us at
+                        main.builderclan@gmail.com
                         or use the contact form on our website.
                     </p>
                 </div>
@@ -177,48 +263,73 @@
         </section>
 
         <!-- Join section -->
-        <section id="join" class="join-section section--brand text-center"
+        <section id="join"
+            class="join-section section--brand text-center"
             data-aos="zoom-in">
             <div class="container">
-                <h2 class="section__title section__title--invert">Join
-                    BuilderClan</h2>
+                <h2
+                    class="section__title section__title--invert">Join
+                    BuilderClan AISAT</h2>
                 <p class="section__text section__text--invert">
-                    Be part of our journey. Let's innovate and build together.
+                    Be part of our journey. Let's innovate and build
+                    together.
                 </p>
-                <a href="https://discord.gg/Xkr9GbxZ" target="_blank"
+                <a href="https://discord.gg/Xkr9GbxZ"
+                    target="_blank"
                     class="join-btn btn btn--inverse">
                     Join Discord
                 </a>
             </div>
         </section>
 
-        <!-- FAQ SECTION SHOW MORE BUTTON -->
-        <script>
-            const showMoreBtn = document.getElementById("showMoreBtn");
-            const hiddenCards = document.querySelectorAll(".card.hidden");
+        <!-- Flying Rocket -->
+        <button class="rocket floating-card"
+            aria-label="Rocket">🚀</button>
 
-            let expanded = false;
-
-            showMoreBtn.addEventListener("click", () => {
-                if (!expanded) {
-                hiddenCards.forEach(card => card.classList.remove("hidden"));
-                showMoreBtn.textContent = "Show Less";
-                expanded = true;
-                } else {
-                hiddenCards.forEach(card => card.classList.add("hidden"));
-                showMoreBtn.textContent = "Show More";
-                expanded = false;
-                }
-            });
-        </script>
+        <div id="easterEggPopup" class="popup">
+            <div class="popup-content">
+                <img src="assets/images/builderclan/easter-egg.svg"
+                    alt="Easter Egg"
+                    class="egg-icon">
+                <h2>🚀 Deep Space Explorer Unlocked!</h2>
+                <h3>Keep exploring to find more secrets...</h3>
+                <p>btw there are 2 hidden games check browser console</p>
+                <button id="closePopup">Close</button>
+            </div>
+        </div>
 
         <footer class="footer" data-aos="fade-up">
-            <p class="footer__copy">&copy; 2025 BuilderClan AISAT. All rights
+            <p class="footer__copy">&copy; 2025 BuilderClan AISAT.
+                All rights
                 reserved.</p>
-            <p class="footer__copy hellweek">Team Hell Week</p>
+            <p class="footer__copy hellweek" id="hell">Team Hell
+                Week</p>
         </footer>
 
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <!-- SNAKE GAME WRAPPER -->
+        <div id="snakeGameContainer"
+            style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%, -50%); z-index:9999; background:#293447; padding:10px; border-radius:5px; box-shadow:0 20px 40px rgba(52, 87, 220, 0.2);">
+            <div class="wrapper" id="snake">
+                <div class="game-details">
+                    <span class="score">Score: 0</span>
+                    <span class="high-score">High Score: 0</span>
+                </div>
+                <div class="play-board"></div>
+                <div class="controls">
+                    <i data-key="ArrowLeft"
+                        class="fa-solid fa-arrow-left-long"></i>
+                    <i data-key="ArrowUp"
+                        class="fa-solid fa-arrow-up-long"></i>
+                    <i data-key="ArrowRight"
+                        class="fa-solid fa-arrow-right-long"></i>
+                    <i data-key="ArrowDown"
+                        class="fa-solid fa-arrow-down-long"></i>
+                </div>
+            </div>
+        </div>
+
+        <script
+            src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
       AOS.init({ duration: 1000, once: true });
     </script>
