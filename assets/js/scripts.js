@@ -16,6 +16,20 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
+    // Hamburger button toggle
+    const navToggle = document.getElementById("navToggle");
+    const navOverlay = document.getElementById("navOverlay");
+
+    navToggle.addEventListener("click", () => {
+        navOverlay.classList.toggle("show");
+    });
+
+    navOverlay.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", () => {
+            navOverlay.classList.remove("show");
+        });
+    });
+
     // Rocket Easter Egg
     const rocket = document.querySelector(".rocket");
     const popup = document.getElementById("easterEggPopup");
@@ -24,9 +38,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
     rocket?.addEventListener("click", () => {
         launchCount++;
-        rocket.classList.remove("launch");
-        void rocket.offsetWidth;
-        rocket.classList.add("launch");
+        gsap.fromTo(
+            rocket,
+            { x: 0, y: 0, opacity: 1, rotation: 0 },
+            {
+                x: window.innerWidth,
+                y: -window.innerHeight,
+                rotation: 45,
+                opacity: 0,
+                duration: 2,
+                ease: "power1.inOut",
+                onComplete: () => {
+                    gsap.set(rocket, { x: 0, y: 0, opacity: 1, rotation: 0 });
+                }
+            }
+        );
         if (launchCount === 1) console.log("🚀 Keep clicking, Big Brain XD...");
         if (launchCount === 2) console.log("🌌 Almost there...");
         if (launchCount === 3) {
@@ -35,9 +61,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    rocket?.addEventListener("animationend", () => {
-        rocket.classList.remove("launch");
-    });
 
     closePopup?.addEventListener("click", () => {
         popup.style.display = "none";
@@ -128,6 +151,30 @@ function startSnakeGame() {
     }
 
     controls.forEach(button => button.addEventListener("click", () => changeDirection({ key: button.dataset.key })));
+
+
+    // --- Mobile Swipe Support ---
+    let touchStartX = 0, touchStartY = 0;
+    document.addEventListener("touchstart", e => {
+        touchStartX = e.changedTouches[0].screenX;
+        touchStartY = e.changedTouches[0].screenY;
+    });
+    document.addEventListener("touchend", e => {
+        let dx = e.changedTouches[0].screenX - touchStartX;
+        let dy = e.changedTouches[0].screenY - touchStartY;
+
+        if (Math.abs(dx) > Math.abs(dy)) {
+            // Horizontal swipe
+            if (dx > 0) changeDirection({ key: "ArrowRight" });
+            else changeDirection({ key: "ArrowLeft" });
+        } else {
+            // Vertical swipe
+            if (dy > 0) changeDirection({ key: "ArrowDown" });
+            else changeDirection({ key: "ArrowUp" });
+        }
+    });
+    // -------------------------------------
+
 
     const initGame = () => {
         if (gameOver) return handleGameOver();

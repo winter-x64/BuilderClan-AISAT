@@ -1,0 +1,21 @@
+/* ---- Footer ---- */
+.footer {
+    background: #111827;
+    color: #9ca3af;
+    text-align: center;
+    padding: 0.1rem;
+}
+
+.footer__copy {
+    margin: 0;
+}
+
+.hellweek:hover {
+    color: #fd0000;
+}
+
+@media (min-width: 700px) {
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

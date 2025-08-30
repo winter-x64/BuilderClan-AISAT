@@ -1,0 +1,57 @@
+/* DISOCRD JOIN  */
+
+.join-section {
+    padding: 6rem 2rem;
+    width: 100%;
+    color: #fff;
+    box-shadow: inset 0 0 80px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.join-btn {
+    display: inline-block;
+    padding: 0.8rem 1.6rem;
+    border-radius: 9999px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    background: linear-gradient(270deg, #7b2ff7, #f107a3, #ff6a00, #ffdd00);
+    background-size: 400% 400%;
+    animation: gradientMove 8s ease infinite, pulse 2.5s ease-in-out infinite;
+    box-shadow: 0 0 20px rgba(241, 7, 163, 0.4);
+    transition: transform 0.2s ease;
+}
+
+.join-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(241, 7, 163, 0.7);
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.08);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
