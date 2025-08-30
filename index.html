@@ -3,6 +3,9 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/svg+xml"
+            href="assets/images/builderLogoAISAT.svg" />
+
         <script
             src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
@@ -20,6 +23,8 @@
         <header class="nav">
             <div class="container nav__inner">
                 <div class="nav__logo">
+                    <img src="assets/images/LogoShort.svg"
+                        alt="BuilderClan Logo" class="logo-icon">
                     <a href="https://builderclan.org/#home"
                         target="_blank"
                         rel="noopener noreferrer">BuilderClan</a>
@@ -28,7 +33,7 @@
                     <a href="#hero">Home</a>
                     <a href="#about">About</a>
                     <a href="#faq">FAQ</a>
-                    <a href="#join">Join</a>
+                    <a href="#join">Join BuilderClan</a>
                 </nav>
             </div>
         </header>
@@ -82,40 +87,97 @@
             </div>
         </section>
 
-        <!-- FAQ section -->
-        <section id="faq" class="section section--ft" data-aos="fade-up">
-            <div class="container">
-                <h2 class="section__title text-center">FAQ</h2>
-                <div class="cards">
-                    <div class="card">
-                        <h3 class="card__title">What is BuilderClan?</h3>
-                        <p class="card__text">
-                            A tech community where builders, coders, and
-                            designers collaborate on projects and ideas.
-                        </p>
-                    </div>
+        <!-- FAQ  section -->
+        <section id="faq" class="section section--ds" data-aos="fade-up">
+            <h2 class="section__title text-center">FAQ</h2>
 
-                    <div class="card">
-                        <h3 class="card__title">Who can join?</h3>
-                        <p class="card__text">
-                            Anyone with a passion for building — whether you're
-                            a beginner or an expert.
-                        </p>
-                    </div>
+            <div class="container faq-container">
 
-                    <div class="card">
-                        <h3 class="card__title">How do I join?</h3>
-                        <p class="card__text">
-                            Click the Join button below to connect with us on
-                            Discord and start collaborating.
-                        </p>
-                    </div>
+                <div class="card card--indigo">
+                    <h3 class="card__title">What is BuilderClan?</h3>
+                    <p class="card__text">
+                        A tech community where builders, coders, and
+                        designers collaborate on projects and ideas.
+                    </p>
                 </div>
+
+                <div class="card card--teal">
+                    <h3 class="card__title">Who can join?</h3>
+                    <p class="card__text">
+                        Anyone with a passion for building — whether you're
+                        a beginner or an expert.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3 class="card__title">How do I join?</h3>
+                    <p class="card__text">
+                        Click the Join button below to connect with us on
+                        Discord and start collaborating.
+                    </p>
+                </div>
+
+                <!-- hidden -->
+                <div class="card hidden card--sky">
+                    <h3 class="card__title">What activities does
+                        BuilderClan organize?</h3>
+                    <p class="card__text">
+                        We host open-source projects, hackathons, coding
+                        challenges, workshops, webinars, and community
+                        meetups,
+                        as well as networking opportunities and
+                        mentorship programs.
+                    </p>
+                </div>
+
+                <div class="card hidden card--indigo">
+                    <h3 class="card__title">Are there any rules for the
+                        community?</h3>
+                    <p class="card__text">
+                        Yes, we have a set of community rules to ensure
+                        a respectful and collaborative environment.
+                        You can find them on our official website.
+                    </p>
+                </div>
+
+                <div class="card hidden card--teal">
+                    <h3 class="card__title">Can I promote my projects or
+                        services in the community?</h3>
+                    <p class="card__text">
+                        Yes, but please ensure your promotions are
+                        relevant and non-spammy. Use designated channels
+                        for project showcases.
+                    </p>
+                </div>
+
+                <div class="card hidden">
+                    <h3 class="card__title">How do I collaborate on
+                        community projects?</h3>
+                    <p class="card__text">
+                        Keep an eye on announcements for project
+                        opportunities. Once a project is announced,
+                        you can apply to join the team or contribute
+                        through GitHub.
+                    </p>
+                </div>
+
+                <div class="card hidden card--sky">
+                    <h3 class="card__title">How do I contact the
+                        BuilderClan team?</h3>
+                    <p class="card__text">
+                        You can reach us at main.builderclan@gmail.com
+                        or use the contact form on our website.
+                    </p>
+                </div>
+            </div>
+            <div class="faq__button-wrapper">
+                <button id="showMoreBtn" class="btn faq-btn">Show
+                    More</button>
             </div>
         </section>
 
         <!-- Join section -->
-        <section id="join" class="section section--brand text-center"
+        <section id="join" class="join-section section--brand text-center"
             data-aos="zoom-in">
             <div class="container">
                 <h2 class="section__title section__title--invert">Join
@@ -124,11 +186,31 @@
                     Be part of our journey. Let's innovate and build together.
                 </p>
                 <a href="https://discord.gg/Xkr9GbxZ" target="_blank"
-                    class="btn btn--inverse">
+                    class="join-btn btn btn--inverse">
                     Join Discord
                 </a>
             </div>
         </section>
+
+        <!-- FAQ SECTION SHOW MORE BUTTON -->
+        <script>
+            const showMoreBtn = document.getElementById("showMoreBtn");
+            const hiddenCards = document.querySelectorAll(".card.hidden");
+
+            let expanded = false;
+
+            showMoreBtn.addEventListener("click", () => {
+                if (!expanded) {
+                hiddenCards.forEach(card => card.classList.remove("hidden"));
+                showMoreBtn.textContent = "Show Less";
+                expanded = true;
+                } else {
+                hiddenCards.forEach(card => card.classList.add("hidden"));
+                showMoreBtn.textContent = "Show More";
+                expanded = false;
+                }
+            });
+        </script>
 
         <footer class="footer" data-aos="fade-up">
             <p class="footer__copy">&copy; 2025 BuilderClan AISAT. All rights
