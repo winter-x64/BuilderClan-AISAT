@@ -13,24 +13,25 @@
 
 
 .btn--primary {
-    background: #fff;
-    color: var(--indigo-700);
+    background: #caff33;
+    color: #1a1a1a;
 }
 
 .btn--primary:hover {
-    color: #bb5beb;
+    background: #a6d71f;
     transform: scale(1.05);
-    box-shadow: var(--shadow-md);
 }
 
 .btn--inverse {
-    background: #ffffff;
-    color: #bb5beb;
+    background: transparent;
+    color: #caff33;
+    border: 2px solid #caff33;
+    box-shadow: var(--shadow-md);
 }
 
 .btn--inverse:hover {
-    background: #fff;
-    color: var(--indigo-700);
+    background: #caff33;
+    color: #1a1a1a;
     transform: scale(1.05);
     box-shadow: var(--shadow-md);
 }

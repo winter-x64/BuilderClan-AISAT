@@ -1,5 +1,10 @@
 /* DISOCRD JOIN  */
 
+.clan-highlight {
+    color: #caff33;
+    transition: color 0.3s ease;
+}
+
 .join-section {
     padding: 6rem 2rem;
     width: 100%;
@@ -16,16 +21,16 @@
     font-weight: 600;
     color: #fff;
     text-decoration: none;
-    background: linear-gradient(270deg, #7b2ff7, #f107a3, #ff6a00, #ffdd00);
+    background: linear-gradient(270deg, #caff33, #81a718, #acda2c);
     background-size: 400% 400%;
     animation: gradientMove 8s ease infinite, pulse 2.5s ease-in-out infinite;
-    box-shadow: 0 0 20px rgba(241, 7, 163, 0.4);
+    box-shadow: 0 0 20px #caff33;
     transition: transform 0.2s ease;
 }
 
 .join-btn:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 30px rgba(241, 7, 163, 0.7);
+    box-shadow: 0 0 30px #bbff00;
 }
 
 @keyframes gradientMove {

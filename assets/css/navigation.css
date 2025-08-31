@@ -4,7 +4,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 10;
+    z-index:9999;
     padding: 1rem 1.5rem;
     display: flex;
     justify-content: center;
@@ -51,6 +51,10 @@
     transition: color 0.3s ease;
 }
 
+.builder-white {
+    color: white;
+}
+
 .nav__logo {
     display: flex;
     align-items: center;
@@ -58,15 +62,18 @@
     font-weight: 700;
     font-weight: bold;
     font-size: 1.25rem;
-    color: #82d4ed;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-.nav__logo a:hover {
-    color: #ff4da6;
-    transform: translateY(-2px) scale(1.05);
-    text-shadow: 0 4px 12px rgba(255, 77, 166, 0.6);
+.nav__logo a:hover .builder-white {
+    transition: color 0.3s ease;
+    color: #caff33;
+
+}
+
+.nav__logo a:hover .clan-highlight {
+    color: white;
 }
 
 /* Hamburger button hidden by default */
@@ -75,7 +82,7 @@
     font-size: 1.8rem;
     background: none;
     border: none;
-    color: #4dbbff;
+    color: #caff33;
     cursor: pointer;
 }
 
@@ -90,7 +97,7 @@
     display: flex;
     gap: 1.5rem;
     margin-left: 1.5rem;
-    color: #4dbbff;
+    color: white;
     font-weight: 700;
     text-decoration: none;
     position: relative;
@@ -98,9 +105,7 @@
 }
 
 .nav__links a:hover {
-    color: #ff4da6;
-    transform: translateY(-2px) scale(1.05);
-    text-shadow: 0 4px 12px rgba(255, 77, 166, 0.6);
+    color: #caff33;
 }
 
 .nav__overlay {
@@ -128,7 +133,7 @@
 }
 
 .nav__overlay a {
-    color: #4dbbff;
+    color: #caff33;
     font-size: 2rem;
     font-weight: 700;
     text-decoration: none;
@@ -157,7 +162,7 @@
         font-size: 2rem;
         background: none;
         border: none;
-        color: #4dbbff;
+        color: #caff33;
         cursor: pointer;
     }
 }
