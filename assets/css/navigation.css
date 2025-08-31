@@ -1,0 +1,163 @@
+/* Navigation Bar */
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: center;
+    background: #00000086;
+}
+
+
+.nav__inner {
+    width: min(1100px, 92%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-icon {
+    height: 24px;
+    width: auto;
+}
+
+.logo-icon:hover {
+    animation: poplogo 1s ease forwards;
+    height: 24px;
+    width: auto;
+}
+
+@keyframes poplogo {
+    0% {
+        transform: scale(0.8);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.buildertext {
+    font-weight: 700;
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: #4dbbff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav__logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: #82d4ed;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav__logo a:hover {
+    color: #ff4da6;
+    transform: translateY(-2px) scale(1.05);
+    text-shadow: 0 4px 12px rgba(255, 77, 166, 0.6);
+}
+
+/* Hamburger button hidden by default */
+.nav__toggle {
+    display: none;
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    color: #4dbbff;
+    cursor: pointer;
+}
+
+.nav__links {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+
+.nav__links a {
+    display: flex;
+    gap: 1.5rem;
+    margin-left: 1.5rem;
+    color: #4dbbff;
+    font-weight: 700;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav__links a:hover {
+    color: #ff4da6;
+    transform: translateY(-2px) scale(1.05);
+    text-shadow: 0 4px 12px rgba(255, 77, 166, 0.6);
+}
+
+.nav__overlay {
+    position: fixed;
+    top: 75px;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.95);
+    opacity: .7;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 2rem;
+    gap: 2rem;
+    transition: left 0.3s ease;
+    z-index: 9999;
+}
+
+
+.nav__overlay.show {
+    left: 0;
+}
+
+.nav__overlay a {
+    color: #4dbbff;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav__overlay a:hover {
+    color: #ff4da6;
+}
+
+
+@media (max-width: 768px) {
+    .nav__links {
+        position: static;
+        right: 1rem;
+        background: transparent;
+        gap: 0.8rem;
+        width: 100%;
+        padding: 0;
+        border-radius: 12px;
+        display: none;
+    }
+
+    .nav__toggle {
+        display: block;
+        font-size: 2rem;
+        background: none;
+        border: none;
+        color: #4dbbff;
+        cursor: pointer;
+    }
+}

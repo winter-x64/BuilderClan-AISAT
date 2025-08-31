@@ -1,0 +1,105 @@
+/* rocket button */
+.rocket {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    font-size: 2.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    z-index: 9999;
+}
+
+.floating-card img {
+    width: 300px;
+    height: 200px;
+    background: linear-gradient(135deg, #00e5ff, #8a2be2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    border-radius: 20px;
+    animation: float 3s ease-in-out infinite;
+}
+
+/* EASTER EGGS */
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10000;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.popup-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    padding: 2rem;
+    border-radius: 1rem;
+    color: #00fff0;
+    font-size: small;
+    text-shadow: 0 0 10px #00fff0, 0 0 20px #ff62f5;
+    max-width: 400px;
+    background: #110d1cb3;
+    box-shadow: 0 0 20px #00fff0;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+
+.egg-icon {
+    align-items: center;
+    width: 80px;
+    margin-bottom: 1rem;
+    animation: bounce 1.2s infinite alternate;
+}
+
+/* Button */
+#closePopup {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background: linear-gradient(45deg, #6366f1, #14b8a6, #0ea5e9);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+    transition: transform 0.2s;
+}
+
+#closePopup:hover {
+    transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-15px);
+    }
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

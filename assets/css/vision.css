@@ -1,0 +1,23 @@
+/* Vision Section */
+.vision {
+    background: #b9dddf;
+    backdrop-filter: blur(6px);
+    text-align: center;
+    padding: 5rem 2rem;
+}
+
+.vision h3 {
+    font-size: 2rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
+    color: #603269;
+}
+
+.vision p {
+    font-weight: normal;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #603269;
+}

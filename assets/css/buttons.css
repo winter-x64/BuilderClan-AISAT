@@ -1,0 +1,54 @@
+/* ---- Buttons ---- */
+.btn {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: .9rem 1.75rem;
+    border-radius: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    transform: translateZ(0);
+    transition: transform .18s ease, box-shadow .18s ease, background-color .18s ease, color .18s ease;
+    box-shadow: var(--shadow-sm);
+}
+
+
+.btn--primary {
+    background: #fff;
+    color: var(--indigo-700);
+}
+
+.btn--primary:hover {
+    color: #bb5beb;
+    transform: scale(1.05);
+    box-shadow: var(--shadow-md);
+}
+
+.btn--inverse {
+    background: #ffffff;
+    color: #bb5beb;
+}
+
+.btn--inverse:hover {
+    background: #fff;
+    color: var(--indigo-700);
+    transform: scale(1.05);
+    box-shadow: var(--shadow-md);
+}
+
+.faq-btn {
+    background: linear-gradient(to top left, #c660ebe6, #2dd4bf, #818cf8);
+    color: white;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.faq-btn:hover {
+    transition: 0.3s ease;
+    background: linear-gradient(to top right, #c660ebe6, #2dd4bf, #818cf8);
+    transform: scale(1.05);
+    box-shadow: var(--shadow-md);
+}
