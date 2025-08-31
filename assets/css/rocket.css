@@ -1,4 +1,17 @@
 /* rocket button */
+
+.fa-rocket {
+    color: #76a100;
+    font-size: 2.5rem;
+    transition: transform 0.3s ease, color 30.3 ease;
+}
+
+.fa-rocket:hover {
+    color: #a0da00;
+    font-size: 3rem;
+    transform: scale(0.9);
+}
+
 .rocket {
     position: fixed;
     bottom: 20px;
@@ -44,14 +57,14 @@
     align-items: center;
     position: relative;
     z-index: 2;
-    padding: 2rem;
+    padding: 1.1rem;
     border-radius: 1rem;
-    color: #00fff0;
+    color: #c9ff35;
     font-size: small;
-    text-shadow: 0 0 10px #00fff0, 0 0 20px #ff62f5;
+    text-shadow: 0 0 1px #c9ff35, 0 0 20px #aee31d;
     max-width: 400px;
-    background: #110d1cb3;
-    box-shadow: 0 0 20px #00fff0;
+    background: #0a0a0a;
+    box-shadow: 0 0 3px #35ff3c;
     animation: fadeIn 0.5s ease-in-out;
 }
 
@@ -66,18 +79,22 @@
 /* Button */
 #closePopup {
     margin-top: 1rem;
-    padding: 0.5rem 1rem;
-    background: linear-gradient(45deg, #6366f1, #14b8a6, #0ea5e9);
-    border: none;
+    padding: 0.6rem 1.2rem;
+    background: transparent;
+    border: 2px solid #00fff0;
     border-radius: 8px;
-    color: white;
+    font-weight: bold;
+    color: #00fff0;
     cursor: pointer;
-    box-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
-    transition: transform 0.2s;
+    text-shadow: 0 0 6px #00fff0, 0 0 12px #ff62f5;
+    box-shadow: 0 0 12px rgba(0, 255, 240, 0.7);
+    transition: all 0.3s ease;
 }
 
 #closePopup:hover {
-    transform: scale(1.05);
+    background: rgba(0, 255, 240, 0.1);
+    transform: scale(1.08);
+    box-shadow: 0 0 20px #00fff0, 0 0 30px #ff62f5;
 }
 
 /* Animations */

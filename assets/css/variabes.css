@@ -33,7 +33,10 @@ body {
     font-weight: 600;
     font-style: normal;
     color: var(--text);
-    background: linear-gradient(to top right, var(--dpurp), var(--purple), var(--cyan));
+    background: linear-gradient(to top right,
+            #1a1a1a 100%,
+            #292929 40%,
+            #1a1a1a 80%);
     line-height: 1.6;
     overflow-x: hidden;
 }

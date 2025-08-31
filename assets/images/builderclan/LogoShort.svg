@@ -35,82 +35,82 @@
      fill="#C9F93A"
      transform="translate(0,0)"
      id="path1"
-     style="fill:#ffffff;fill-opacity:1" />
+     style="fill:#caff33;fill-opacity:1" />
   <path
      d="m 61.036161,11.299026 c 0.66,0.66 1.32,1.32 2,2 0.269919,2.688394 0.08737,5.29142 0,8 -2.31,0 -4.62,0 -7,0 -0.33,-1.65 -0.66,-3.3 -1,-5 -3.96,0 -7.92,0 -12,0 0,5.28 0,10.56 0,16 3.96,0 7.92,0 12,0 0.66,-1.65 1.32,-3.3 2,-5 1.98,0 3.96,0 6,0 0.595066,4.845541 0.620992,8.043379 -2.4375,12 -4.572563,4.201043 -10.024923,3.554875 -15.870849,3.357422 -1.898567,-0.09525 -3.795452,-0.223045 -5.691651,-0.357422 -0.268125,-0.598125 -0.53625,-1.19625 -0.8125,-1.8125 -1.037873,-2.214185 -1.037873,-2.214185 -2.728027,-3.534179 -2.850151,-3.228709 -2.056424,-7.791338 -2.084473,-11.903321 -0.04512,-0.929414 -0.09023,-1.858828 -0.136719,-2.816406 -0.04981,-5.030705 0.374611,-8.223905 3.824219,-12.027344 3.659549,-3.1234835 6.71641,-3.9391128 11.5625,-4.1562492 1.271016,-0.087656 2.542031,-0.1753125 3.851563,-0.265625 4.416158,0.646267 5.722989,2.1389115 8.523437,5.5156242 z m -17,22 c 0,0.33 0,0.66 0,1 2.64,0 5.28,0 8,0 0,-0.33 0,-0.66 0,-1 -2.64,0 -5.28,0 -8,0 z"
      fill="#FBFCF7"
      id="path2"
-     style="fill:#afbedc;fill-opacity:1" />
+     style="fill:#ffffff;fill-opacity:1" />
   <path
      d="M0 0 C18.81 0 37.62 0 57 0 C57 1.98 57 3.96 57 6 C38.19 6 19.38 6 0 6 C0 4.02 0 2.04 0 0 Z "
      fill="#B1D83E"
      transform="translate(0,44)"
      id="path3"
-     style="fill:#ffffff;fill-opacity:1" />
+     style="fill:#caff33;fill-opacity:1" />
   <path
      d="M0 0 C11.22 0.33 22.44 0.66 34 1 C34.66 2.32 35.32 3.64 36 5 C24.12 5 12.24 5 0 5 C0 3.35 0 1.7 0 0 Z "
      fill="#B2E32D"
      transform="translate(0,45)"
      id="path4"
-     style="fill:#ffffff;fill-opacity:1" />
+     style="fill:#caff33;fill-opacity:1" />
   <path
      d="M0 0 C1.32 0.33 2.64 0.66 4 1 C5.26026798 3.52053595 4.91874445 4.8542098 4.5625 7.625 C4.46066406 8.44226562 4.35882812 9.25953125 4.25390625 10.1015625 C4.17011719 10.72804688 4.08632813 11.35453125 4 12 C2.68 12.33 1.36 12.66 0 13 C0 8.71 0 4.42 0 0 Z "
      fill="#BEEA3B"
      transform="translate(25,24)"
      id="path5"
-     style="fill:#ffffff;fill-opacity:1" />
+     style="fill:#caff33;fill-opacity:1" />
   <path
      d="M0 0 C6.5296 -0.3696 6.5296 -0.3696 8.75 1.375 C9.36875 2.179375 9.36875 2.179375 10 3 C10.99 3.66 11.98 4.32 13 5 C8.71 5 4.42 5 0 5 C0 3.35 0 1.7 0 0 Z "
      fill="#C3F631"
      transform="translate(0,45)"
      id="path6"
-     style="fill:#ffffff;fill-opacity:1" />
+     style="fill:#caff33;fill-opacity:1" />
   <path
      d="M0 0 C9.24 0 18.48 0 28 0 C27.67 1.65 27.34 3.3 27 5 C26.61932373 4.5155542 26.23864746 4.0311084 25.84643555 3.53198242 C23.34435534 1.45601345 21.68197877 1.57359732 18.45703125 1.48828125 C16.84731445 1.43510742 16.84731445 1.43510742 15.20507812 1.38085938 C14.08552734 1.35830078 12.96597656 1.33574219 11.8125 1.3125 C10.11577148 1.26125977 10.11577148 1.26125977 8.38476562 1.20898438 C5.5899426 1.12643686 2.79543602 1.05730818 0 1 C0 0.67 0 0.34 0 0 Z "
      fill="#ADD731"
      transform="translate(10,45)"
      id="path7"
-     style="fill:#ffffff;fill-opacity:1" />
+     style="fill:#caff33;fill-opacity:1" />
   <path
      d="M0 0 C4.56278027 -0.36995516 4.56278027 -0.36995516 6.625 1.375 C7.07875 1.91125 7.5325 2.4475 8 3 C8.99 3.66 9.98 4.32 11 5 C7.28400809 5.20086443 6.22791555 5.1519437 3 3 C3 2.34 3 1.68 3 1 C2.01 0.67 1.02 0.34 0 0 Z "
      fill="#BCEC30"
      transform="translate(2,45)"
      id="path8"
-     style="fill:#ffffff;fill-opacity:1" />
+     style="fill:#caff33;fill-opacity:1" />
   <path
      d="m 43.386648,16.47427 c 3.96,0 7.92,0 12,0 -0.33,1.32 -0.66,2.64 -1,4 0,-0.99 0,-1.98 0,-3 -3.63,0 -7.26,0 -11,0 0,-0.33 0,-0.66 0,-1 z"
      fill="#e3f1be"
      id="path9"
-     style="fill:#afbedc;fill-opacity:1" />
+     style="fill:#ffffff;fill-opacity:1" />
   <path
      d="M0 0 C4.95 0 9.9 0 15 0 C15 0.33 15 0.66 15 1 C10.05 1 5.1 1 0 1 C0 0.67 0 0.34 0 0 Z "
      fill="#E3F1BE"
      transform="translate(42,6)"
      id="path10"
-     style="fill:#afbedc;fill-opacity:1" />
+     style="fill:#ffffff;fill-opacity:1" />
   <path
      d="M0 0 C2.64 0 5.28 0 8 0 C8 0.33 8 0.66 8 1 C5.36 1 2.72 1 0 1 C0 0.67 0 0.34 0 0 Z "
      fill="#E3F1BE"
      transform="translate(8,32)"
      id="path11"
-     style="fill:#ffffff;fill-opacity:1" />
+     style="fill:#caff33;fill-opacity:1" />
   <path
      d="M0 0 C0.33 0 0.66 0 1 0 C1 2.64 1 5.28 1 8 C0.67 8 0.34 8 0 8 C0 5.36 0 2.72 0 0 Z "
      fill="#E3F1BE"
      transform="translate(30,8)"
      id="path12"
-     style="fill:#ffffff;fill-opacity:1" />
+     style="fill:#caff33;fill-opacity:1" />
   <path
      d="m 46.346319,33.184976 c 1.98,0 3.96,0 6,0 0,0.33 0,0.66 0,1 -1.98,0 -3.96,0 -6,0 0,-0.33 0,-0.66 0,-1 z"
      fill="#E3F1BE"
      id="path13"
-     style="fill:#afbedc;fill-opacity:1" />
+     style="fill:#ffffff;fill-opacity:1" />
   <path
      d="M0 0 C1.98 0 3.96 0 6 0 C6 0.33 6 0.66 6 1 C4.02 1 2.04 1 0 1 C0 0.67 0 0.34 0 0 Z "
      fill="#E3F1BE"
      transform="translate(10,9)"
      id="path14"
-     style="fill:#ffffff;fill-opacity:1" />
+     style="fill:#caff33;fill-opacity:1" />
   <path
      d="M0 0 C0.33 0 0.66 0 1 0 C1 1.65 1 3.3 1 5 C0.67 5 0.34 5 0 5 C0 3.35 0 1.7 0 0 Z "
      fill="#E3F1BE"
@@ -122,7 +122,7 @@
      fill="#E3F1BE"
      transform="translate(16,27)"
      id="path16"
-     style="fill:#ffffff;fill-opacity:1" />
+     style="fill:#caff33;fill-opacity:0.9254902" />
   <path
      d=""
      fill="#E3F1BE"
@@ -138,13 +138,13 @@
      fill="#E3F1BE"
      transform="translate(22,42)"
      id="path19"
-     style="fill:#4f46e5;fill-opacity:1" />
+     style="fill:#caff33;fill-opacity:1" />
   <path
      d="M0 0 C2 1 2 1 2 1 Z "
      fill="#E3F1BE"
      transform="translate(0,42)"
      id="path20"
-     style="fill:#4f46e5;fill-opacity:1" />
+     style="fill:#caff33;fill-opacity:1" />
   <path
      d=""
      fill="#E3F1BE"
@@ -155,7 +155,7 @@
      fill="#E3F1BE"
      transform="translate(16,14)"
      id="path22"
-     style="fill:#4f46e5;fill-opacity:1" />
+     style="fill:#caff33;fill-opacity:1" />
   <path
      d=""
      fill="#E3F1BE"
