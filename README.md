@@ -40,6 +40,7 @@ git clone https://github.com/GhostInHex-x86/BuilderClan-AISAT.git
 cd BuilderClan-AISAT
 
 # Open the project in your default browser
+
 # On Android:
 Install SHTTPS server app
 Inside SHTTPS app navigate to BuilderClan-AISAT
