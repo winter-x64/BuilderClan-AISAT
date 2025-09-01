@@ -35,8 +35,7 @@
         box-shadow: 0 0 20px #38384e, 0 0 15px #25254c;
         transform: scale(1.05);
         transition: all 0.3s ease;
-
-    }
+     }
 }
 
 .hidden {

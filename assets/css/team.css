@@ -31,6 +31,7 @@
     color: #e6e6e6;
 }
 
+
 @media (hover: hover) and (pointer: fine) {
     .team-card:hover {
         transform: scale(1.05);
@@ -42,7 +43,6 @@
     width: 80px;
     height: 80px;
     background: linear-gradient(135deg, #b5ed1b, #3d5105);
-    ;
     border-radius: 50%;
     display: flex;
     align-items: center;
