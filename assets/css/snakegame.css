@@ -9,6 +9,11 @@
     font-style: normal;
 }
 
+#snakeGameContainer .controls i {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+
 #snakeGameContainer .wrapper {
     width: 65vmin;
     height: 70vmin;

@@ -1,12 +1,12 @@
 /* Mission Section */
 .mission {
     border-radius: 0;
-    background: #b1a5cc;
-    padding: 5rem 2rem;
+    padding: 1rem 2rem;
     backdrop-filter: blur(6px);
 }
 
 .mission-container {
+    padding: 0rem 0rem 2rem 0rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -21,26 +21,25 @@
     min-width: 280px;
     font-size: 2rem;
     font-weight: normal;
-    /* margin-bottom: 1rem; */
-    color: #603269;
+    color: #fff;
 }
 
 
-.mission-text h2 {
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-    /* line-height: 1.8; */
-    color: #603269;
+.mission-text h3 {
+    line-height: 1.8;
+    color: #caff33;
 }
 
 .mission-text p {
     font-size: 1.1rem;
+    font-weight: normal;
     line-height: 1.8;
-    color: #603269;
+    color: #e6e6e6;
 }
 
 
 .mission-image {
+    padding: 0.1rem 0rem 0rem 0rem;
     flex: 1;
     min-width: 280px;
     display: flex;
@@ -52,12 +51,14 @@
     max-width: 100%;
     height: auto;
     border-radius: 20px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease;
 }
 
-.mission-image img:hover {
-    transform: scale(1.05);
+@media (hover: hover) and (pointer: fine) {
+    .mission-image img:hover {
+        box-shadow: 0 1px 15px rgba(202, 255, 51, 0.25);
+        transform: scale(1.05);
+    }
 }
 
 @media (max-width: 768px) {

@@ -1,13 +1,6 @@
 /* Theme Variables */
 :root {
     --text: #111827;
-    --gray-200: #dceced;
-    --slate-blue: #2a2a42;
-    --grey-blue: #3b3b60;
-    --dpurp: #27005d;
-    --purple: #9400ff;
-    --cyan: #aed2ff;
-    --indigo-700: #4338ca;
 
     --radius-lg: 16px;
     --shadow-sm: 0 1px 2px rgba(0, 0, 0, .06), 0 4px 8px rgba(0, 0, 0, .04);
@@ -33,7 +26,10 @@ body {
     font-weight: 600;
     font-style: normal;
     color: var(--text);
-    background: linear-gradient(to top right, var(--dpurp), var(--purple), var(--cyan));
+    background: linear-gradient(to top right,
+            #1a1a1a 100%,
+            #292929 40%,
+            #1a1a1a 80%);
     line-height: 1.6;
     overflow-x: hidden;
 }

@@ -1,17 +1,15 @@
 /* Team Section */
 .team {
     padding: 5rem 2rem;
-    background: #b1a5cc;
-    backdrop-filter: blur(6px);
+    backdrop-filter: blur(4px);
     text-align: center;
-    /* border-radius: 0 0 50px 50px; */
 }
 
 .team h3 {
     font-size: 2rem;
-    font-weight: normal;
+    font-weight: 700;
     margin-bottom: 2rem;
-    color: #603269;
+    color: #caff33;
 }
 
 .team-grid {
@@ -21,25 +19,30 @@
 }
 
 .team-card {
-    background: linear-gradient(to top right, #27005d, #9400ff);
+    background: linear-gradient(to top right, #151515, #242424);
     border-radius: 25px;
     padding: 1.5rem;
-    transition: transform 0.4s ease;
+    transition: transform 0.4s ease box-shadow 0.3s ease;
+    color: #e6e6e6;
 }
 
 .team-card {
     font-weight: normal;
-    color: #aed2ff
+    color: #e6e6e6;
 }
 
-.team-card:hover {
-    transform: scale(1.05);
+@media (hover: hover) and (pointer: fine) {
+    .team-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 1px 15px rgba(202, 255, 51, 0.25);
+    }
 }
 
 .icon {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, #00e5ff, #8a2be2);
+    background: linear-gradient(135deg, #b5ed1b, #3d5105);
+    ;
     border-radius: 50%;
     display: flex;
     align-items: center;
