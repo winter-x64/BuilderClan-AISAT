@@ -31,7 +31,6 @@
     color: #e6e6e6;
 }
 
-
 @media (hover: hover) and (pointer: fine) {
     .team-card:hover {
         transform: scale(1.05);

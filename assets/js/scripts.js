@@ -24,6 +24,18 @@ document.addEventListener("DOMContentLoaded", () => {
         navOverlay.classList.toggle("show");
     });
 
+    // Swipe Close
+    let touchStartX = 0;
+    let touchEndX = 0;
+    document.addEventListener("touchstart", (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+    });
+
+    document.addEventListener("touchend", (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleGesture(touchStartX, touchEndX);
+    });
+
     navOverlay.querySelectorAll("a").forEach(link => {
         link.addEventListener("click", () => {
             navOverlay.classList.remove("show");
@@ -71,13 +83,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const hellweek = document.getElementById("hell");
     hellweek.addEventListener('click', () => {
         hellcount++;
-        if (hellcount === 2) console.log("🐍 Seriously Bruh, you think this is a game?");
-        if (hellcount === 3) console.log("🕸️ finally a curious one hmm lets see ...");
-        if (hellcount == 4) {
+        if (hellcount === 1) console.log("🐍 Seriously Bruh, you think this is a game?");
+        if (hellcount === 2) console.log("🕸️ finally a curious one hmm lets see ...");
+        if (hellcount == 3) {
             console.log("🏴󠁩󠁳󠀱󠁿 Task 1: follow __naveen__.pyw")
             console.log("🏴󠁩󠁳󠀱󠁿 Task 2: follow https://github.com/GhostInHex-x86")
         }
-        if (hellcount === 5) {
+        if (hellcount === 4) {
             const container = document.getElementById('snakeGameContainer');
             container.style.display = 'block';
             startSnakeGame();
@@ -104,13 +116,23 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+// Guesture support for navigation overlay
+function handleGesture(touchStartX, touchEndX) {
+    const swipeThreshold = 50;
+    if (touchStartX - touchEndX > swipeThreshold) {
+        navOverlay.classList.remove("show");
+    } else if (touchEndX - touchStartX > swipeThreshold) {
+        if (!navOverlay.classList.contains("show")) {
+            navOverlay.classList.add("show");
+        }
+    }
+}
+
 
 function startSnakeGame() {
     const playBoard = document.querySelector("#snakeGameContainer .play-board");
     const scoreElement = document.querySelector("#snakeGameContainer .score");
     const highScoreElement = document.querySelector("#snakeGameContainer .high-score");
-    const controls = document.querySelectorAll("#snakeGameContainer .controls i");
-
     let gameOver = false;
     let foodX, foodY;
     let snakeX = 5, snakeY = 5;
@@ -144,9 +166,6 @@ function startSnakeGame() {
             velocityX = 1; velocityY = 0;
         }
     }
-
-    controls.forEach(button => button.addEventListener("click", () => changeDirection({ key: button.dataset.key })));
-
 
     // --- Mobile Swipe Support ---
     let touchStartX = 0, touchStartY = 0;
