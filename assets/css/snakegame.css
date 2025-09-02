@@ -66,20 +66,6 @@
     background: #60CBFF;
 }
 
-#snakeGameContainer .controls {
-    display: none;
-    justify-content: space-between;
-}
-
-#snakeGameContainer .controls i {
-    padding: 25px 0;
-    text-align: center;
-    font-size: 1.3rem;
-    color: #B8C6DC;
-    width: calc(100% / 4);
-    cursor: pointer;
-    border-right: 1px solid #171B26;
-}
 
 @media screen and (max-width: 800px) {
     #snakeGameContainer .wrapper {
@@ -90,14 +76,5 @@
     #snakeGameContainer .game-details {
         font-size: 1rem;
         padding: 15px 27px;
-    }
-
-    #snakeGameContainer .controls {
-        display: flex;
-    }
-
-    #snakeGameContainer .controls i {
-        padding: 15px 0;
-        font-size: 1rem;
     }
 }
