@@ -1,3 +1,5 @@
+let gameActive = false;
+
 document.addEventListener("DOMContentLoaded", () => {
     // FAQ Show More Button
     const showMoreBtn = document.getElementById("showMoreBtn");
@@ -29,6 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let touchEndX = 0;
     let touchStartY = 0;
     let touchEndY = 0;
+
     document.addEventListener("touchstart", (e) => {
         touchStartX = e.changedTouches[0].screenX;
         touchStartY = e.changedTouches[0].screenY;
@@ -122,6 +125,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Guesture support for navigation overlay
 function handleGesture(touchStartX, touchStartY, touchEndX, touchEndY) {
+    if (gameActive) return;
+
     const swipeThreshold = 60;
     const dx = touchEndX - touchStartX;
     const dy = touchEndY - touchStartY;
@@ -137,6 +142,7 @@ function handleGesture(touchStartX, touchStartY, touchEndX, touchEndY) {
 
 
 function startSnakeGame() {
+    gameActive = true;
     const playBoard = document.querySelector("#snakeGameContainer .play-board");
     const scoreElement = document.querySelector("#snakeGameContainer .score");
     const highScoreElement = document.querySelector("#snakeGameContainer .high-score");
@@ -158,6 +164,7 @@ function startSnakeGame() {
 
     const handleGameOver = () => {
         clearInterval(setIntervalId);
+        gameActive = false;
         alert("Game Over! Press OK to go back...");
         location.reload();
     }
@@ -176,11 +183,14 @@ function startSnakeGame() {
 
     // --- Mobile Swipe Support ---
     let touchStartX = 0, touchStartY = 0;
-    document.addEventListener("touchstart", e => {
+    const gameContainer = document.getElementById("snakeGameContainer");
+    gameContainer.addEventListener("touchstart", e => {
         touchStartX = e.changedTouches[0].screenX;
         touchStartY = e.changedTouches[0].screenY;
-    });
-    document.addEventListener("touchend", e => {
+        e.preventDefault();
+    }, { passive: false });
+
+    gameContainer.addEventListener("touchend", e => {
         let dx = e.changedTouches[0].screenX - touchStartX;
         let dy = e.changedTouches[0].screenY - touchStartY;
 
@@ -193,7 +203,8 @@ function startSnakeGame() {
             if (dy > 0) changeDirection({ key: "ArrowDown" });
             else changeDirection({ key: "ArrowUp" });
         }
-    });
+        e.preventDefault();
+    }, { passive: false });
     // -------------------------------------
 
 
