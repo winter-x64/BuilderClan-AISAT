@@ -1,10 +1,8 @@
 /* Team Section */
 .team {
     padding: 5rem 2rem;
-    /* background: linear-gradient(135deg, #1e1e1e 0%, #2a2a2a 100%); */
     backdrop-filter: blur(4px);
     text-align: center;
-    /* border-radius: 0 0 50px 50px; */
 }
 
 .team h3 {
@@ -33,16 +31,18 @@
     color: #e6e6e6;
 }
 
-.team-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 1px 15px rgba(202, 255, 51, 0.25);
+
+@media (hover: hover) and (pointer: fine) {
+    .team-card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 1px 15px rgba(202, 255, 51, 0.25);
+    }
 }
 
 .icon {
     width: 80px;
     height: 80px;
     background: linear-gradient(135deg, #b5ed1b, #3d5105);
-    ;
     border-radius: 50%;
     display: flex;
     align-items: center;

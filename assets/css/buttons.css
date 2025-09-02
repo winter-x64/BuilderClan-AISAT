@@ -17,9 +17,11 @@
     color: #1a1a1a;
 }
 
-.btn--primary:hover {
-    background: #a6d71f;
-    transform: scale(1.05);
+@media (hover: hover) and (pointer: fine) {
+    .btn--primary:hover {
+        background: #a6d71f;
+        transform: scale(1.05);
+    }
 }
 
 .btn--inverse {
@@ -29,11 +31,13 @@
     box-shadow: var(--shadow-md);
 }
 
-.btn--inverse:hover {
-    background: #caff33;
-    color: #1a1a1a;
-    transform: scale(1.05);
-    box-shadow: var(--shadow-md);
+@media (hover: hover) and (pointer: fine) {
+    .btn--inverse:hover {
+        background: #caff33;
+        color: #1a1a1a;
+        transform: scale(1.05);
+        box-shadow: var(--shadow-md);
+    }
 }
 
 .faq-btn {
@@ -47,9 +51,11 @@
     transition: transform 0.2s ease;
 }
 
-.faq-btn:hover {
-    transition: 0.3s ease;
-    background: linear-gradient(to top right, #c660ebe6, #2dd4bf, #818cf8);
-    transform: scale(1.05);
-    box-shadow: var(--shadow-md);
+@media (hover: hover) and (pointer: fine) {
+    .faq-btn:hover {
+        transition: 0.3s ease;
+        background: linear-gradient(to top right, #c660ebe6, #2dd4bf, #818cf8);
+        transform: scale(1.05);
+        box-shadow: var(--shadow-md);
+    }
 }

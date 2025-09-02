@@ -30,29 +30,17 @@
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.card:hover {
-    box-shadow: 0 0 20px #6366f1aa, 0 0 15px #14b8a6aa;
-    transform: scale(1.05);
-    transition: all 0.3s ease;
-
+@media (hover: hover) and (pointer: fine) {
+    .card:hover {
+        box-shadow: 0 0 20px #38384e, 0 0 15px #25254c;
+        transform: scale(1.05);
+        transition: all 0.3s ease;
+     }
 }
 
 .hidden {
     display: none;
 }
-
-/* #showMoreBtn {
-    display: block;
-    margin: 30px auto 0;
-    padding: 12px 28px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 1rem;
-    color: #fff;
-    background: linear-gradient(90deg, #6366f1, #14b8a6, #0ea5e9);
-    transition: all 0.3s ease;
-} */
 
 #showMoreBtn {
     display: block;
@@ -69,16 +57,12 @@
     color: #1a1a1a;
 }
 
-#showMoreBtn:hover {
-    background: #b6e533;
-    transform: scale(1.05);
+@media (hover: hover) and (pointer: fine) {
+    #showMoreBtn:hover {
+        background: #b6e533;
+        transform: scale(1.05);
+    }
 }
-
-/* #showMoreBtn:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 15px #6366f1aa, 0 0 10px #14b8a6aa;
-} */
-
 
 .card__title {
     margin: 0 0 0.6rem 0;

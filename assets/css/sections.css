@@ -18,14 +18,18 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.section-about:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 1px 10px rgba(202, 255, 51, 0.25);
+@media (hover: hover) and (pointer: fine) {
+    .section-about:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 1px 10px rgba(202, 255, 51, 0.25);
+    }
 }
 
-.section:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+@media (hover: hover) and (pointer: fine) {
+    .section:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+    }
 }
 
 .section--gb {

@@ -17,8 +17,6 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    /* padding: 6rem 2rem 2rem 2rem; */
-    /* padding: 3rem 2rem 0 4rem; */
     padding: 3rem 4rem 5rem 4rem;
     color: #fff;
     background: linear-gradient(to top right,
@@ -139,9 +137,11 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.hero__logo-wrapper:hover {
-    transform: translateY(-10px) scale(1.05);
-    box-shadow: 0 16px 16px rgba(0, 0, 0, 0.35), 0 0 10px #caff33;
+@media (hover: hover) and (pointer: fine) {
+    .hero__logo-wrapper:hover {
+        transform: translateY(-10px) scale(1.05);
+        box-shadow: 0 16px 16px rgba(0, 0, 0, 0.35), 0 0 10px #caff33;
+    }
 }
 
 .hero__inner {

@@ -54,9 +54,11 @@
     transition: transform 0.3s ease;
 }
 
-.mission-image img:hover {
-    box-shadow: 0 1px 15px rgba(202, 255, 51, 0.25);
-    transform: scale(1.05);
+@media (hover: hover) and (pointer: fine) {
+    .mission-image img:hover {
+        box-shadow: 0 1px 15px rgba(202, 255, 51, 0.25);
+        transform: scale(1.05);
+    }
 }
 
 @media (max-width: 768px) {

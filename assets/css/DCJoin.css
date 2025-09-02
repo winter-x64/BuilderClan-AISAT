@@ -28,9 +28,11 @@
     transition: transform 0.2s ease;
 }
 
-.join-btn:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 30px #bbff00;
+@media (hover: hover) and (pointer: fine) {
+    .join-btn:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 30px #bbff00;
+    }
 }
 
 @keyframes gradientMove {
