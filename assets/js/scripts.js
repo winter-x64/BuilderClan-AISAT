@@ -27,13 +27,17 @@ document.addEventListener("DOMContentLoaded", () => {
     // Swipe Close
     let touchStartX = 0;
     let touchEndX = 0;
+    let touchStartY = 0;
+    let touchEndY = 0;
     document.addEventListener("touchstart", (e) => {
         touchStartX = e.changedTouches[0].screenX;
+        touchStartY = e.changedTouches[0].screenY;
     });
 
     document.addEventListener("touchend", (e) => {
         touchEndX = e.changedTouches[0].screenX;
-        handleGesture(touchStartX, touchEndX);
+        touchEndY = e.changedTouches[0].screenY;
+        handleGesture(touchStartX, touchStartY, touchEndX, touchEndY);
     });
 
     navOverlay.querySelectorAll("a").forEach(link => {
@@ -117,13 +121,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 // Guesture support for navigation overlay
-function handleGesture(touchStartX, touchEndX) {
-    const swipeThreshold = 50;
-    if (touchStartX - touchEndX > swipeThreshold) {
-        navOverlay.classList.remove("show");
-    } else if (touchEndX - touchStartX > swipeThreshold) {
-        if (!navOverlay.classList.contains("show")) {
+function handleGesture(touchStartX, touchStartY, touchEndX, touchEndY) {
+    const swipeThreshold = 60;
+    const dx = touchEndX - touchStartX;
+    const dy = touchEndY - touchStartY;
+
+    if (Math.abs(dx) > Math.abs(dy)) {
+        if (dx > swipeThreshold) {
             navOverlay.classList.add("show");
+        } else if (dx < -swipeThreshold) {
+            navOverlay.classList.remove("show");
         }
     }
 }
