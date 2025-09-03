@@ -16,6 +16,7 @@
 .join-btn {
     display: inline-block;
     padding: 0.8rem 1.6rem;
+    box-shadow: var(--shadow-md);
     border-radius: 9999px;
     font-size: 1rem;
     font-weight: 600;
@@ -31,7 +32,7 @@
 @media (hover: hover) and (pointer: fine) {
     .join-btn:hover {
         transform: scale(1.05);
-        box-shadow: 0 0 30px #bbff00;
+        box-shadow: 0 0 30px #93ba27;
     }
 }
 
