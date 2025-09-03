@@ -2,7 +2,7 @@
 
 .hero__content {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
@@ -11,13 +11,13 @@
 }
 
 .hero {
-    scroll-margin-top: 80px;
+    scroll-margin-top: 150px;
     position: relative;
     min-height: 100vh;
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 3rem 4rem 5rem 4rem;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 4rem 5rem 4rem;
     color: #fff;
     background: linear-gradient(to top right,
             #151515 0% #242424 40%,
