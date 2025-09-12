@@ -49,6 +49,16 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
+    // Fixed scroll issue with nav bar and hall of section
+    const hallOfFame = document.querySelector('.hall-of-fame');
+    hallOfFame.addEventListener('touchstart', (e) => {
+        e.stopPropagation();
+    }, { passive: true });
+
+    hallOfFame.addEventListener('mousedown', (e) => {
+        e.stopPropagation();
+    });
+
     // Rocket Easter Egg
     const rocket = document.querySelector(".rocket");
     const popup = document.getElementById("easterEggPopup");
