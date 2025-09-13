@@ -1,0 +1,93 @@
+.section__title-hell {
+    color: #caff33;
+    border-bottom: 2px solid #ffffff;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    font-weight: 700;
+    margin: 0 auto;
+}
+
+.hall-of-fame {
+    text-align: center;
+    padding: 3rem 2rem;
+    background-color: transparent;
+    color: #fff;
+}
+
+.hall-of-fame-grid {
+    margin-top: 1rem;
+    display: flex;
+    overflow-x: auto;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    touch-action: pan-x;
+}
+
+
+.hall-of-fame-card {
+    backdrop-filter: blur(2px);
+    background: #201e20;
+    border-radius: var(--radius-lg);
+    padding: 1.5rem;
+    box-shadow: var(--shadow-md);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: gradientShift 2s ease infinite;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .hall-of-fame-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 1px 15px rgba(255, 66, 36, 0.603), 0 0 10px rgba(253, 249, 35, 0.712);
+    }
+}
+
+.member-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.batch,
+.project {
+    opacity: 0.8;
+    margin-bottom: 0.5rem;
+}
+
+.social-links {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-links a {
+    margin: 0 0.5rem;
+    color: #caff33;
+    font-size: 1.4rem;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+
+.social-links a:hover img {
+    transform: scale(1.1);
+    filter: brightness(1);
+}
+
+.hellicon {
+    width: 24px;
+    height: 24px;
+    transition: filter 0.3s ease;
+}
+
+.hellmember {
+    color: rgb(255, 0, 0);
+}
