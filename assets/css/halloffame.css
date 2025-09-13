@@ -17,11 +17,11 @@
 }
 
 .hall-of-fame-grid {
-    margin-top: 2rem;
+    margin-top: 1rem;
     display: flex;
     overflow-x: auto;
     gap: 1.5rem;
-    padding: 1rem;
+    padding: 1.5rem;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
 
@@ -33,16 +33,19 @@
 
 .hall-of-fame-card {
     backdrop-filter: blur(2px);
-    background: #292929;
+    background: #201e20;
     border-radius: var(--radius-lg);
     padding: 1.5rem;
     box-shadow: var(--shadow-md);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: gradientShift 2s ease infinite;
 }
 
-.hall-of-fame-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 0 10px rgba(255, 0, 0, 0.6), 0 0 10px rgba(255, 0, 0, 0.4);
+@media (hover: hover) and (pointer: fine) {
+    .hall-of-fame-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 1px 15px rgba(255, 66, 36, 0.603), 0 0 10px rgba(253, 249, 35, 0.712);
+    }
 }
 
 .member-photo {
@@ -55,7 +58,6 @@
 
 .batch,
 .project {
-    font-size: 1rem;
     opacity: 0.8;
     margin-bottom: 0.5rem;
 }
