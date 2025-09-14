@@ -1,8 +1,14 @@
 /* Team Section */
 .team {
-    padding: 5rem 2rem;
+    padding: 2rem 1rem 0rem 1rem;
     backdrop-filter: blur(4px);
     text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .team {
+        padding: 4rem 1rem 0rem 1rem;
+    }
 }
 
 .team h3 {
@@ -21,14 +27,17 @@
 .team-card {
     background: linear-gradient(to top right, #151515, #242424);
     border-radius: 25px;
-    padding: 1.5rem;
+    padding: 1rem 2rem;
     transition: transform 0.4s ease box-shadow 0.3s ease;
+    color: #e6e6e6;
+    font-weight: normal;
     color: #e6e6e6;
 }
 
-.team-card {
-    font-weight: normal;
-    color: #e6e6e6;
+@media screen and (min-width: 768px) {
+    .team-card {
+        padding: 1.5rem;
+    }
 }
 
 @media (hover: hover) and (pointer: fine) {

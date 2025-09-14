@@ -1,7 +1,7 @@
 /* Mission Section */
 .mission {
     border-radius: 0;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
     backdrop-filter: blur(6px);
 }
 
