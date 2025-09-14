@@ -1,6 +1,19 @@
 let gameActive = false;
 
 document.addEventListener("DOMContentLoaded", () => {
+
+    // Improved UX design XD
+    document.addEventListener('contextmenu', event => event.preventDefault());
+    document.addEventListener('selectstart', event => event.preventDefault());
+    document.addEventListener('keydown', event => {
+        if ((event.ctrlKey && event.key === 'c') || (event.ctrlKey && event.key === 'a')) {
+            event.preventDefault();
+        }
+    });
+    document.addEventListener('mouseover', event => {
+        document.body.style.cursor = 'default';
+    });
+
     // FAQ Show More Button
     const showMoreBtn = document.getElementById("showMoreBtn");
     const hiddenCards = document.querySelectorAll(".card.hidden");
